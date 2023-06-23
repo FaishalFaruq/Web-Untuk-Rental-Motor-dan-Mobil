@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>APLIKASI WEB SEWA MOTOR DAN MOBIL</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+	<header>
+		<h2 class="logo">F.A.F.A</h2>
+		<nav class="navigation">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Contact</a>
+			<button class="b_login">Login</button>
+		</nav>
+	</header>
+	<div class="form">
+		<div class="form_login">
+			<h2>LOGIN</h2>
+			<p>Please login to identify</p>
+			<form action="#">
+				<div class="form_input">
+					<ion-icon name="mail-outline"></ion-icon>
+					<input type="email" id="email" required>
+					<label for="email">Email</label>
+				</div>
+				<div class="form_input">
+					<ion-icon name="lock-closed-outline"></ion-icon>
+					<input type="password" id="password" required>
+					<label for="password">Password</label>
+				</div>
+				<div class="remember_forgot">
+					<label>
+						<input type="checkbox">remember me
+					</label>
+					<a href="#">forgot password?</a>
+				</div>
+				<button type="submit" class="kirim">Login</button>
+				<button type="reset" class="kirim">Cancel</button>
+				<div class="register">
+					<p>Don't have an account?<a href="#" class="register_link"> register</a></p>
+				</div>
+				<body style="background-color: white;">
+				
+				</body>
+			</form>
+			<background img>
+		</div>
+
+		<div class="form_register">
+			<h2>REGISTRATION</h2>
+			<p>Please provide the following to verify your identity</p>
+			<form action="#">
+				<div class="form_input">
+					<ion-icon name="person-circle-outline"></ion-icon>
+					<input type="dropdown" id="name" required>
+					<label for="name">Name</label>
+				</div>
+				<div class="form_input">
+					<ion-icon name="mail-outline"></ion-icon>
+					<input type="email" id="email" required>
+					<label for="email">Email</label>
+				</div>
+				<div class="form_input">
+					<ion-icon name="lock-closed-outline"></ion-icon>
+					<input type="password" id="password" required>
+					<label for="password">Password</label>
+				</div>
+				<div class="remember_forgot">
+					<label>
+						<input type="checkbox">I agree to the terms & conditions
+					</label>
+				</div>
+				<button type="submit" class="kirim">Register</button>
+				<button type="reset" class="kirim">Cancel</button>
+				<div class="register">
+					<p>Already have an account?<a href="#" class="login_link"> Login</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script src="login.js"></script>
+</body>
+</html>
