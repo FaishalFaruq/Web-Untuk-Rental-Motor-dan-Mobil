@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>APLIKASI WEB SEWA MOTOR DAN MOBIL</title>
+</head>
+<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,900;1,700&display=swap');
+	*
+	{
+		margin: 0;
+		padding: 0;
+		transition: 0.3s;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+	}
+	body
+	{
+		width: 100v ;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background: linear-gradient(180deg, orange, white)
+	}
+    header{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+}
+
+.logo{
+	font-size: 2em;
+	color: crimson;
+	user-select: none;
+}
+
+.navigation{
+	margin-left: 630px;
+}
+
+.navigation a{
+	position: relative;
+	font-size: 1.5em;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+	list-style-type: none;
+}
+
+.navigation a::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: crimson;
+	border-radius: 5px;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+
+.navigation a:hover::after{
+	transform: scaleX(1);
+}
+
+	h3
+	{
+		margin-top: 100px;
+		margin-left: 100px;
+		color: #ffcaaf;
+		letter-spacing: 1,5px;
+	}
+	h1
+	{
+		font-size: 60px;
+		color: #ffe5ec;
+		margin-left: 100px;
+		margin-top: 20px;
+
+	}
+	.container
+	{
+		width: 1200px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 50px;
+
+	}
+	.box
+	{
+		width: 250px;
+		height: 250px;
+		padding: 50px;
+		overflow: hidden;
+		border-radius: 14px;
+		background: linear-gradient(145deg, #e6e6e6, #ffc09f);
+		box-shadow: 8px 8px 16px black ;
+		cursor: pointer;
+		transition: 0.3s;
+
+	}
+	.box:hover
+	{
+		background: linear-gradient(145deg, #bb0738, #dab894);
+		box-shadow: 8px 8px 16px black ;
+	}
+	.icons
+	{
+		font-size: 50px;
+		color: #AEC6CF;
+		margin-top: 10px;
+	}
+	.box:hover .icons
+	{
+		margin-top: 0px;
+		color: #FF6961;
+	}
+	.box h2
+	{
+		font-weight: 500;
+		margin-top: 25px;
+	}
+	.box:hover h2
+	{
+		color: #FF6961;
+
+	}
+	.box p
+	{
+		color: darkgray;
+		font-weight: 400;
+		margin-top: 25px;
+	}
+	.box:hover p
+	{
+		color: #FF6961;
+
+	}
+	.arrow
+	{
+		font-size: 30px;
+		color: white;
+		margin-top: 40px;
+		display: none;
+
+	}
+	.box:hover .arrow
+	{
+		color: #F0DEFD;
+		margin-top: 30px;
+		display: block;
+		
+
+	}
+</style>
+<body>
+    <header>
+		<h2 class="logo">F.A.F.A</h2>
+		<nav class="navigation">
+			<a href="awalweb.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="about us.html">Services</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+        <div class="login-container">
+            <a href="login.php"><button class="b_login"></button></a>
+        </div>
+	</header>
+	<h3>FEATURE</h3>
+	<h1>OUR SERVICES</h1>
+	<div class="container">
+		<div class="box">
+			<ion-icon class="icons" name="menu-outline"></ion-icon>
+			<h2>Memilih Kami</h2>
+			<p>Menawarkan harga & mobil yang kompetitif dan menarik.</p>
+			<ion-icon class="arrow" name="arrow-forward-outline"></ion-icon>
+		</div>
+		<div class="box">
+			<ion-icon class="icons" name="menu-outline"></ion-icon>
+			<h2>Layanan Tersedia</h2>
+			<p>Website sewa mobil, pelanggan dapat melakukan pemesanan langsung secara online.</p>
+			<ion-icon class="arrow" name="arrow-forward-outline"></ion-icon>
+		</div>
+		<div class="box">
+			<ion-icon class="icons" name="tv-outline"></ion-icon>
+			<h2>Media Online</h2>
+			<p>Memberikan layanan pelanggan yang lebih efektif & responsif. Pelanggan dapat menghubungi perusahaan melalui platform media sosial.</p>
+			<ion-icon class="arrow" name="arrow-forward-outline"></ion-icon>
+		</div>
+	</div>
+
+
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	/* background: url(https://picstatio.com/large/ueyfui/singer-porsche-car-wallpaper.jpg)no-repeat; */
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+}
+
+header{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+}
+
+.logo{
+	font-size: 2em;
+	color: crimson;
+	user-select: none;
+}
+
+.navigation{
+	margin-left: 630px;
+}
+
+.navigation a{
+	position: relative;
+	font-size: 1.5em;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+	list-style-type: none;
+}
+
+.navigation a::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: crimson;
+	border-radius: 5px;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+
+.navigation a:hover::after{
+	transform: scaleX(1);
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-container .b_login {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: crimson;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.login-container .b_login:hover {
+    background: black;
+    color: #fff;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form button[type="submit"] {
+    width: 130px;
+    height: 50px;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.login-form button[type="submit"]:hover {
+    background: crimson;
+}
+
+.navigation .b_login{
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid black;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: crimson;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: .5s;
+}
+
+.navigation .b_login:hover{
+	background: black;
+	color: #fff;
+}
+
+
+a,a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/a6/2a/1a/a62a1a76d23223931aa41299aed5b35a.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+#header .nav-bar{
+  width: 90%;
+  height: 80px;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+}
+
+#header .nav-bar .logo{
+  margin-left: 50px;
+}
+
+#header .nav-bar .logo a{
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+#header .nav-bar .logo span{
+  font-size: 35px;
+  color: #d43242;
+  margin-left: 5px;
+}
+
+#header .nav-bar .menu ul li{
+  margin-right: 30px;
+}
+
+#header .nav-bar .menu ul li a{
+  font-size: 19px;
+  opacity: 0.6;
+  letter-spacing: 2px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+
+#header .nav-bar .menu ul li a.active{
+  opacity: 1;
+}
+
+#header .nav-bar .menu ul li span{
+  position: absolute;
+  top: 0px;
+  color: #d43242;
+  font-size: 75px;
+}
+
+#header .nav-bar .menu ul li a:hover{
+  opacity: 1;
+}
+
+#header .nav-bar .social-media ul li i{
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+  line-height: 45px;
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+  font-size: 19px;
+  background-color: #cac5c542;
+  transition: all 0.3s ease-in-out;
+}
+
+#header .nav-bar .social-media ul li i:hover{
+  background-color: rgb(255 0 0 / 0.9);
+}
+
+.hero{
+  width: 100%;
+}
+
+.hero .row{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  margin: auto;
+}
+
+.hero .row .left-sec{
+  width: 30%;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.hero .row .left-sec h2{
+  font-size: 85px;
+  color: #fff;
+}
+
+.hero .row .left-sec h2 span{
+  color: #d43242;
+}
+
+.hero .row .left-sec p{
+  margin: 20px 0;
+  color: black;
+  line-height: 28px;
+  padding-right: 150px;
+}
+
+.hero .left-sec .discover-btn{
+  display: flex;
+  align-items: center;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 50px;
+  padding: 0 25px;
+  border: 3px solid #ffa938;
+  background-color: #d43242;
+  box-shadow: 5px 7px 20px #000;
+}
+
+.hero .left-sec .discover-btn a{
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-right: 15px;
+  text-transform: capitalize;
+}
+
+.hero .left-sec .discover-btn span{
+  color: #fff;
+  font-size: 45px;
+}
+
+.hero .information{
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+}
+
+.hero .information .production{
+  margin-right: 50px;
+  line-height: 3px;
+}
+
+.hero .information .production h2{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.hero .information .production p{
+  padding-right: 0;
+  letter-spacing: 1px;
+}
+
+.hero .right-sec{
+  width: 70%;
+  padding-top: 100px;
+}
+
+.hero .right-sec img{
+  width: 950px;
+  height: 550px;
+  margin: auto;
+  float: right;
+}
+
+.slick-prev, .slick-next {
+  top: 110%;
+  z-index: 999;
+}
+
+.slick-prev {
+  position: absolute;
+  left: 950px;
+}
+
+.slick-next {
+  position: absolute;
+  right: 178px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 45px;
+}
+
+.slick-dots {
+  padding-left: 450px;
+  margin-bottom: -50px;  
+}
+
+.slick-dots li{
+  margin-right: 15px;
+}
+
+.slick-dots li.slick-active:after{
+  position: absolute;
+  content: '.';
+  top: 0;
+  bottom: -15px;
+  left: 6px;
+  opacity: 1;
+  color: red;
+  font-size: 36px;
+}
+
+.slick-slide {
+    outline: none;
+}
+
+
+

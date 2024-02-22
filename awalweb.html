@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>APLIKASI WEB SEWA MOTOR DAN MOBIL</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="awalweb.css">
+</head>
+
+<body>
+    <header>
+		<h2 class="logo">F.A.F.A</h2>
+		<nav class="navigation">
+			<a href="awalweb.html">Home</a>
+			<a href="about.html">About Us</a>
+			<a href="about us.html">Services</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+        <div class="login-container">
+            <a href="login.php"><button class="b_login">Login</button></a>
+        </div>
+        <br><br>
+	</header>
+  <section id="header" class="header">
+    <div class="hero">
+      <div class="row">
+        <div class="left-sec">
+          <div class="content">
+            <h2><span>Sewa</span><br>Mobil</h2>
+            <p>Nikmati perjalanan anda dengan layanan rental mobil terbaik dari kami. Terdapat pilihan mobil yang sesuai dengan kebutuhan anda dengan berbagai jenis mobil berkualitas dengan harga terjangkau.</p>
+          </div>
+          <button class="discover-btn">
+            <a href="home.html">SEWA</a><span><i class="fa fa-arrow-circle-o-right"></i></span>
+          </button>
+        </div>
+        <div class="right-sec">
+          <div class="my-car">
+            <div><img src="https://th.bing.com/th/id/R.a8cad9c80733fcad56c8fef852d9f98f?rik=7t26PdX%2bTKic2A&riu=http%3a%2f%2f2.bp.blogspot.com%2f-OTCEAH-9nGE%2fVcLaPiFYrLI%2fAAAAAAAAE9o%2fGBNqcsbN-JM%2fs1600%2faudi_PNG1742.png&ehk=F71iPuNiBxluZo6EqMZBCWVRkFmhanTNGgWVUUXj6cc%3d&risl=&pid=ImgRaw&r=0"></div>
+            <div><img src="https://th.bing.com/th/id/R.9052ad8da8f202ddc156c25f34d6fd1c?rik=nlkKLYI8fPWZ%2fg&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f4%2fCar-PNG-Photo.png&ehk=3sUxHFuF6H3gz5sLgPZmnqhw1%2fVjAIi7yecdiiBu69c%3d&risl=&pid=ImgRaw&r=0"></div>
+            <div><img src="https://th.bing.com/th/id/R.f33cf38ca8ffd16e0d74c1c0b488e6fa?rik=fJRkDZtpLif1Tw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fcar-png--2000.png&ehk=NNUZMtBWVKsm0rdwbqInd9upaYDYo6ztYC62khvQebc%3d&risl=&pid=ImgRaw&r=0"></div>
+            <div><img src="https://1.bp.blogspot.com/-YGP_VJPgT9A/YAa8Nuxz15I/AAAAAAAAAVo/biXoW8ksMUkZoFGNAMHJKZQnRZ9njoPDwCLcBGAsYHQ/w1200-h630-p-k-no-nu/5d4db6e517a689e87c4266f61d77f803.png"></div>
+            <div><img src="https://clipground.com/images/old-car-png-images-9.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            
+        });
+
+        $(".my-car").slick({
+            autoplay: true,
+            speed:1000,
+            dots: true,
+            customPaging : function(slider, i) {
+            var thumb = $(slider.$slides[i]).data();
+            return '<a>'+(i+1)+'</a>';
+        },
+        
+        });
+        </script>
+    </body>
+</html>
